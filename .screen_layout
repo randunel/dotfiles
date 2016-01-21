@@ -1,0 +1,12 @@
+split -v
+screen
+title left
+focus
+screen
+title up-right
+split
+focus
+screen
+title down-right
+focus
+layout save default
