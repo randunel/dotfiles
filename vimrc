@@ -36,4 +36,3 @@ augroup resCur
     autocmd BufWinEnter * call ResCur()
 augroup END
 
-
