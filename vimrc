@@ -1,3 +1,12 @@
+" .vim
+" |-- vimrc
+" |-- autoload
+" |   |-- pathogen.vim
+" |-- bundle
+"     |-- jshint2.vim
+"     |-- syntastic
+"     |-- vim-javascript
+"
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -35,4 +44,6 @@ augroup resCur
     autocmd!
     autocmd BufWinEnter * call ResCur()
 augroup END
+
+let g:syntastic_javascript_checkers = ['jshint']
 
