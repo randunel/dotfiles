@@ -6,7 +6,11 @@
     "newcap": false,
     "predef": [
         "describe",
-    "it"
-        ]
+        "it",
+        "beforeEach",
+        "before",
+        "afterEach",
+        "after"
+    ]
 }
 
