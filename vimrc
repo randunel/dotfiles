@@ -3,6 +3,7 @@
 " |-- autoload
 " |   |-- pathogen.vim
 " |-- bundle
+"     |-- indentLine
 "     |-- jshint2.vim
 "     |-- syntastic
 "     |-- vim-javascript
