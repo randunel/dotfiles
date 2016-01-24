@@ -47,3 +47,8 @@ augroup END
 
 let g:syntastic_javascript_checkers = ['jshint']
 
+set colorcolumn=80
+highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
+
+let g:indentLine_char = 'ˌ'
+
