@@ -7,6 +7,7 @@
 "     |-- jshint2.vim
 "     |-- syntastic
 "     |-- vim-javascript
+"     |-- youcompleteme
 "
 execute pathogen#infect()
 syntax on
