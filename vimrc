@@ -34,6 +34,8 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 set list
 set listchars=tab:>-,
 
+set showcmd
+
 "Restore cursor to file position in previous session
 set viminfo='10,\"100,:20,%,n~/.viminfo
 function! ResCur()
