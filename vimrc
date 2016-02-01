@@ -15,6 +15,9 @@ filetype plugin indent on
 
 set number
 
+" Switch buffer without having to save
+set hidden
+
 set hlsearch
 set incsearch
 
