@@ -59,3 +59,5 @@ highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
 
 let g:indentLine_char = 'ˌ'
 
+imap jj <ESC>:w<CR>
+
