@@ -61,3 +61,5 @@ let g:indentLine_char = 'ˌ'
 
 imap jj <ESC>:w<CR>
 
+set so=2
+
