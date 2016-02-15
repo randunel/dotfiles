@@ -4,6 +4,7 @@
     "unused": true,
     "undef": true,
     "newcap": false,
+    "varstmt": true,
     "predef": [
         "describe",
         "it",
