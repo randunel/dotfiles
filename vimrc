@@ -63,3 +63,9 @@ imap jj <ESC>:w<CR>
 
 set so=2
 
+set backspace=indent,eol,start
+
+let g:ycm_autoclose_preview_window_after_insertion=1
+
+autocmd BufNewFile,BufRead *.ejs setlocal shiftwidth=2 tabstop=2
+
