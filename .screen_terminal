@@ -1,2 +1,5 @@
 source .screenrc
 source .screen_layout
+
+# Run this with `screen -D -R -c ~/.screen_terminal`
+
