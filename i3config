@@ -156,8 +156,19 @@ bar {
         tray_output primary
 }
 
-exec --no-startup-id xset r rate 250 25
-exec --no-startup-id volumeicon
+set $keyboardMode "keyboard r=ro, u=us"
+bindsym $mod+Shift+i mode $keyboardMode
+mode $keyboardMode {
+    bindsym r exec "setxkbmap ro -variant std", mode "default"
+        bindsym u exec "setxkbmap us", mode "default"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+exec --no-startup-id xset r rate 250 20
+# exec --no-startup-id volumeicon
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 exec start-pulseaudio-x11
 bindsym Control+mod1+l exec i3lock
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
