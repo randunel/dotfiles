@@ -11,7 +11,8 @@
         "beforeEach",
         "before",
         "afterEach",
-        "after"
+        "after",
+        "chrome"
     ]
 }
 
