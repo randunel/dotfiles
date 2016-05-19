@@ -8,6 +8,7 @@
 "     |-- syntastic
 "     |-- vim-javascript
 "     |-- youcompleteme
+"     |-- rust.vim
 "
 execute pathogen#infect()
 syntax on

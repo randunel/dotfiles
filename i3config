@@ -170,7 +170,8 @@ exec --no-startup-id xset r rate 250 20
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec start-pulseaudio-x11
-bindsym Control+mod1+l exec i3lock
+# https://github.com/meskarune/i3lock-fancy
+bindsym Control+mod1+l exec lock
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -D pulse sset Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%-
 bindsym Print exec gnome-screenshot -a
