@@ -53,7 +53,8 @@ augroup resCur
     autocmd BufWinEnter * call ResCur()
 augroup END
 
-let g:syntastic_javascript_checkers = ['jshint']
+"let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['eslint']
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
