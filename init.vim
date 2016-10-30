@@ -8,6 +8,7 @@ Plug 'neomake/neomake'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " required npm install -g tern
 Plug 'racer-rust/vim-racer'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -54,8 +55,6 @@ augroup END
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
 
-let g:indentLine_char = 'ˌ'
-
 autocmd BufNewFile,BufRead *.ejs setlocal shiftwidth=2 tabstop=2
 
 set undodir=~/.config/nvim/undodir
@@ -66,5 +65,8 @@ let g:deoplete#enable_at_startup = 1
 " Tab completion
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 autocmd CompleteDone * pclose!
+
+let g:indentLine_enabled = 1
+let g:indentLine_char = 'ˌ'
 
 " set so=2 i don't remember what this did in vim
