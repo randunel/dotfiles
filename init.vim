@@ -9,6 +9,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " required npm install -g tern
 Plug 'racer-rust/vim-racer'
 Plug 'Yggdroot/indentLine'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -30,10 +31,6 @@ set hidden
 
 set noswapfile
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+\%#\@<!$/
-:autocmd InsertLeave * redraw!
-
 set list
 set listchars=tab:>-,
 
@@ -54,6 +51,12 @@ augroup END
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=darkgrey guibg=lightgrey
+
+highlight Search cterm=NONE ctermfg=black ctermbg=yellow
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+\%#\@<!$/
+:autocmd InsertLeave * redraw!
 
 autocmd BufNewFile,BufRead *.ejs setlocal shiftwidth=2 tabstop=2
 
