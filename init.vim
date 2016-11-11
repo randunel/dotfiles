@@ -65,6 +65,8 @@ set undofile
 
 " Autocomplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_buffer_path = 1
+let g:deoplete#file#enable_buffer_path = 1
 " Tab completion
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 autocmd CompleteDone * pclose!
