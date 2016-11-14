@@ -74,4 +74,5 @@ autocmd CompleteDone * pclose!
 let g:indentLine_enabled = 1
 let g:indentLine_char = 'ˌ'
 
-" set so=2 i don't remember what this did in vim
+" scroll when fewer than 2 lines left around the cursor
+set so=2
