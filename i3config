@@ -169,6 +169,9 @@ mode $keyboardMode {
         bindsym Escape mode "default"
 }
 
+# Disable showing title
+new_window pixel 1
+
 exec --no-startup-id xset r rate 250 20
 # exec --no-startup-id volumeicon
 exec --no-startup-id nm-applet
