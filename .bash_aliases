@@ -1,6 +1,6 @@
-export PATH=$PATH:/home/randunel/.cargo/bin
+export PATH=$PATH:/home/$USER/.cargo/bin:./node_modules/.bin
 
-export UB_ROOT=~/projects/inventures
+export UB_ROOT=~/projects/ub
 export RUST_SRC_PATH=/usr/local/src/rust/src
 
 export PS_user='\[\033[1;92m\]\u';
@@ -15,7 +15,7 @@ PS1="$PS_user $PS_docker$PS_docker_separator$PS_node $PS_cwd$PS_git\n$PS_prompt"
 
 # PS1='\[\033[1;92m\]\u \[\033[0;31m\]$CODENAME\[\033[0m\]/\[\033[1;31m\]$NODE_ENV \[\033[1;34m\]\w\[\033[1;93m\]$(__git_ps1) \n\[\033[1;34m\]\$\[\033[0m\] '
 
-export UB_INF_ROOT='/home/randunel/projects/inventures/infrastructure'
+export UB_INF_ROOT="/home/$USER/projects/ub/infrastructure"
 
 alias :e='nvim'
 alias vim='nvim'
@@ -27,3 +27,4 @@ alias hdmimirror="xrandr --output HDMI-1 --auto --same-as LVDS-1"
 alias hdmimirroroff="xrandr --output HDMI-1 --off"
 alias dc="docker-compose"
 alias dm="docker-machine"
+alias nh="node --harmony-async-await"
