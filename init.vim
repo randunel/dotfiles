@@ -5,7 +5,11 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neomake/neomake'
+Plug 'mhartington/nvim-typescript'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'mhartington/nvim-typescript', {'for': ['typescript', 'tsx'], 'do': ':!install.sh \| UpdateRemotePlugins'}
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/denite.nvim'
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " required npm install -g tern
 Plug 'racer-rust/vim-racer'
 Plug 'Yggdroot/indentLine'
