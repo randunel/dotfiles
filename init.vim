@@ -9,6 +9,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' } " required npm install -g tern
 Plug 'racer-rust/vim-racer'
 Plug 'Yggdroot/indentLine'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'andys8/vim-elm-syntax'
+" Plug 'ElmCast/elm-vim'
 Plug 'sheerun/vim-polyglot'
 
 call plug#end()
@@ -76,3 +79,8 @@ let g:indentLine_char = 'ˌ'
 
 " scroll when fewer than 2 lines left around the cursor
 set so=2
+
+let g:polyglot_disabled = ['elm']
+" let g:elm_make_show_warnings = 0
+" let g:elm_format_autosave = 1
+
