@@ -1,5 +1,11 @@
+[options]
+use_instance = true
+
 [icons]
 
 [aliases]
 Google-chrome = "chrome"
 Gnome-terminal = "t"
+
+google-chrome = "chrome"
+gnome-terminal-server = "t"
